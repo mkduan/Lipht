@@ -78,20 +78,19 @@ public class MainActivity extends Activity {
                     switch(text){
                         case "yes":
                             //OPEN FIREBASE // TODO: 2017-03-19
-                            text = "NOT DONE YET";
+                          //  text = "NOT DONE YET";
                             Intent i = new Intent(this, MessagingActivity.class);
                             startActivity(i);
                             break;
                         case "no":
-                            // OPEN CAMERA
+                            // OPEN CAMERa
                             openCamera();
                             break;
-                    }
-                    if (!text.equals("yes") || !text.equals("no")){
+                    } // txtOutput.setText(text);
+                    if (!text.equals("yes") && !text.equals("no")){
                         text = "sorry we didn't detect that, say again?";
                         txtOutput.setText(text);
                     }
-                    txtOutput.setText(text);
                 }
                 break;
             }
