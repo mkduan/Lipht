@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
                 RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         intent.putExtra(RecognizerIntent.EXTRA_PROMPT,
-                "How are you feeling?");
+                "Feeling Frustrated..?");
         try {
             startActivityForResult(intent, SPEECH_RECOGNITION_CODE);
         } catch (ActivityNotFoundException a) {
@@ -79,6 +79,8 @@ public class MainActivity extends Activity {
                         case "yes":
                             //OPEN FIREBASE // TODO: 2017-03-19
                             text = "NOT DONE YET";
+                            Intent i = new Intent(this, MessagingActivity.class);
+                            startActivity(i);
                             break;
                         case "no":
                             // OPEN CAMERA
