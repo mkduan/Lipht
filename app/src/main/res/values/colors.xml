@@ -3,4 +3,9 @@
     <color name="white">#ffffff</color>
     <color name="bg_gradient_start">#1565C0</color>
     <color name="bg_gradient_end">#64B5F6</color>
+
+    <color name="colorPrimary">#64B5F6</color>
+    <color name="colorPrimaryDark">#1565C0</color>
+    <color name="colorAccent">#2E7D32</color>
+    <color name="colorTitle">#ffffff</color>
 </resources>

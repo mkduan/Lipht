@@ -26,7 +26,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="60dp"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
 
         <ImageButton
             android:id="@+id/btn_mic"
@@ -43,6 +44,18 @@
             android:textColor="@color/white"
             android:textSize="15dp"
             android:textStyle="normal" />
+
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp"
+        android:text="Button"
+        android:onClick="startMsg"/>
 
 </RelativeLayout>
