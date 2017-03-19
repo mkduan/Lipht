@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,12 +31,19 @@ public class MainActivity extends Activity {
     private ImageButton btnMicrophone;
     private static final int REQUEST_PORTRAIT_RFC=1337;
     private static final int REQUEST_PORTRAIT_FFC=REQUEST_PORTRAIT_RFC+1;
+    Button yes;
+    Button no;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         txtOutput = (TextView) findViewById(R.id.txt_output);
         btnMicrophone = (ImageButton) findViewById(R.id.btn_mic);
+        yes = (Button) findViewById(R.id.button3);
+        no = (Button) findViewById(R.id.button2);
+        yes.setVisibility(View.GONE);
+        no.setVisibility(View.GONE);
         btnMicrophone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,6 +100,8 @@ public class MainActivity extends Activity {
                         txtOutput.setText(text);
                     }
                 }
+                yes.setVisibility(View.VISIBLE);
+                no.setVisibility(View.VISIBLE);
                 break;
             }
         }
@@ -107,8 +117,16 @@ public class MainActivity extends Activity {
                 .build();
 
         startActivityForResult(i, REQUEST_PORTRAIT_FFC);
-            }
+    }
 
+    public void nah(View view) {
+        openCamera();
+    }
+
+    public void yee(View view) {
+        Intent i = new Intent(this, MessagingActivity.class);
+        startActivity(i);
+    }
 
 }
 
