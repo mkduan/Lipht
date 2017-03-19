@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "322657777840",
+    "firebase_url": "https://lipht-bd885.firebaseio.com",
+    "project_id": "lipht-bd885",
+    "storage_bucket": "lipht-bd885.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322657777840:android:e700b360cb2d6368",
+        "android_client_info": {
+          "package_name": "com.example.android.lipht"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322657777840-vce5uodiojmjrqsti3p5vsad7tf297os.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.lipht",
+            "certificate_hash": "af33a8dab0a1a78c4c45fa0477a8b1845261a827"
+          }
+        },
+        {
+          "client_id": "322657777840-itelevfp1jf576d519g8hb1jdiptml13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjgJCihsxDvv0vLvgHa23z-mv5ZWTfgBY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322657777840-itelevfp1jf576d519g8hb1jdiptml13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
